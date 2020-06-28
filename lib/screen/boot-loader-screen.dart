@@ -21,7 +21,7 @@ class BootLoaderScreen extends StatefulWidget {
 
 class _BootLoaderScreenState extends State<BootLoaderScreen> {
   var seconds = 10;
-  var selectedPosition = 0;
+  var selectedPosition = 1;
 
   var focusNode0 = FocusNode();
   var focusNode1 = FocusNode();
@@ -73,7 +73,7 @@ class _BootLoaderScreenState extends State<BootLoaderScreen> {
                         print(event.data.keyLabel);
                         if (event.data.keyLabel == "ArrowDown") {
                           setState(() {
-                            selectedPosition = 1;
+                            selectedPosition = 2;
                           });
                           focusNode1.requestFocus();
                         } else if (event.data.keyLabel == "Enter") {
@@ -83,7 +83,7 @@ class _BootLoaderScreenState extends State<BootLoaderScreen> {
                     },
                     child: BootMenuText(
                       "1. Boot from Hard Disk.",
-                      isSelected: selectedPosition == 0,
+                      isSelected: selectedPosition == 1,
                     ),
                   ),
                   Container(height: 10.0),
@@ -93,7 +93,7 @@ class _BootLoaderScreenState extends State<BootLoaderScreen> {
                       if (event.runtimeType == RawKeyUpEvent) {
                         if (event.data.keyLabel == "ArrowUp") {
                           setState(() {
-                            selectedPosition = 0;
+                            selectedPosition = 1;
                           });
                           focusNode0.requestFocus();
                         } else if (event.data.keyLabel == "Enter") {
@@ -103,7 +103,7 @@ class _BootLoaderScreenState extends State<BootLoaderScreen> {
                     },
                     child: BootMenuText(
                       "2. Start computer with CD-ROM support.",
-                      isSelected: selectedPosition == 1,
+                      isSelected: selectedPosition == 2,
                     ),
                   ),
                 ],
@@ -113,7 +113,7 @@ class _BootLoaderScreenState extends State<BootLoaderScreen> {
             Row(
               children: [
                 Text("Enter a choice: "),
-                Text("1"),
+                Text("$selectedPosition"),
                 Container(width: 100),
                 Text("Time Remaining: $seconds"),
               ],
