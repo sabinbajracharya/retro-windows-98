@@ -50,6 +50,7 @@ flutter:
     - assets/images/boot-loading.gif
     - assets/audio/windows-98-startup-sound.wav
     - assets/audio/typing.mp3
+    - assets/audio/BSOD.mp3
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
