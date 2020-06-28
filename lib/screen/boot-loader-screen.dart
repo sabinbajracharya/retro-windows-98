@@ -48,9 +48,9 @@ class _BootLoaderScreenState extends State<BootLoaderScreen> {
     return Material(
       textStyle: TextStyle(
           color: Colors.grey.shade400,
-          fontFamily: 'lucida-console',
+          fontFamily: 'MorePerfectDOSVGA',//'lucida-console',
           fontWeight: FontWeight.bold,
-          fontSize: 24.0),
+          fontSize: 28.0),
       color: Colors.black,
       child: Padding(
         padding: EdgeInsets.all(52.0),

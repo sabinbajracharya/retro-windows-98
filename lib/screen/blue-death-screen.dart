@@ -41,9 +41,9 @@ An exception 06 has occured at 0028:C11B3ADC in VxD DiskTSD(03) +
             letterSpacing: 1.5,
             height: 1.2,
             color: Colors.white.withAlpha(235),
-            fontFamily: 'lucida-console',
+            fontFamily: 'MorePerfectDOSVGA',
             fontWeight: FontWeight.bold,
-            fontSize: 24.0),
+            fontSize: 28.0),
         child: Container(
           padding: EdgeInsets.only(
             left: 120.0,

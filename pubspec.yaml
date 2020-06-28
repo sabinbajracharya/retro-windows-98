@@ -67,6 +67,9 @@ flutter:
     - family: lucida-console
       fonts:
         - asset: fonts/Lucida-Console.ttf
+    - family: MorePerfectDOSVGA
+      fonts:
+        - asset: fonts/MorePerfectDOSVGA.ttf
   # fonts:
   #   - family: Schyler
   #     fonts:
