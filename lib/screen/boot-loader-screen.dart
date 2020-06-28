@@ -20,7 +20,7 @@ class BootLoaderScreen extends StatefulWidget {
 }
 
 class _BootLoaderScreenState extends State<BootLoaderScreen> {
-  var seconds = 10;
+  var seconds = 24;
   var selectedPosition = 1;
 
   var focusNode0 = FocusNode();
@@ -40,7 +40,7 @@ class _BootLoaderScreenState extends State<BootLoaderScreen> {
       });
       await Future.delayed(Duration(seconds: 1));
     }
-    // widget.bootWindows98();
+    selectedPosition == 1 ? widget.bootWindows98() : widget.showScreenOfDeath();
   }
 
   @override
