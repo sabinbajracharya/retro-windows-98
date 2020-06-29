@@ -48,7 +48,7 @@ class Main extends StatefulWidget {
 }
 
 class _MainState extends State<Main> {
-  var screen = Screen.DESKTOP_SCREEN;
+  var screen = Screen.BOOT_LOADER_SCREEN;
 
   @override
   void initState() {
