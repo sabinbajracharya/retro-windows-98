@@ -3,6 +3,7 @@ import 'package:flame/flame.dart';
 import 'package:retrowindows98/screen/blue-death-screen.dart';
 
 import 'package:retrowindows98/screen/boot-loader-screen.dart';
+import 'package:retrowindows98/screen/desktop-screen-new.dart';
 import 'package:retrowindows98/screen/desktop-screen.dart';
 import 'package:retrowindows98/screen/win98-loader-screen.dart';
 
@@ -47,7 +48,7 @@ class Main extends StatefulWidget {
 }
 
 class _MainState extends State<Main> {
-  var screen = Screen.BOOT_LOADER_SCREEN;
+  var screen = Screen.DESKTOP_SCREEN;
 
   @override
   void initState() {
@@ -79,7 +80,7 @@ class _MainState extends State<Main> {
         });
 
       case Screen.DESKTOP_SCREEN:
-        return DesktopScreen(widget.size).widget;
+        return DesktopScreen();//DesktopScreen(widget.size).widget;
 
       case Screen.BLUE_DEATH_SCREEN:
         return BlueDeathScreen(
