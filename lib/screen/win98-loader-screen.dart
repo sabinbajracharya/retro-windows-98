@@ -16,7 +16,7 @@ class WIN98LoaderScreen extends StatelessWidget {
       child: FittedBox(
         fit: BoxFit.fill,
         child: Image.asset(
-          "images/boot-loading.gif",
+          "assets/images/boot-loading.gif",
         ),
       ),
     );
