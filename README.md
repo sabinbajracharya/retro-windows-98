@@ -4,7 +4,7 @@
   <br>
   <a href=""><img src="https://i7.pngguru.com/preview/695/1024/977/windows-98-windows-95-microsoft-windows-microsoft-corporation-clip-art-windows-98.jpg" alt="Todo" width="200"></a>
   <br>
-  Windows 98 design based on Flutter for #Hack20 Hackathon
+  Windows 98 design based on Flutter for #Hack20
   <br>
   <br>
   <a href="https://gallant-tereshkova-eb2d27.netlify.app/" target="_blank">Run Demo</a>
