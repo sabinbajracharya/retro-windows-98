@@ -55,6 +55,9 @@ flutter:
     - assets/images/ic-recycle-bin-full.png
     - assets/images/start-button.png
     - assets/images/ic-ie-favicon.png
+    - assets/images/ic-ember.png
+    - assets/images/ic-dart.png
+    - assets/images/photo.jpg
     - assets/audio/windows-98-startup-sound.wav
     - assets/audio/typing.mp3
     - assets/audio/BSOD.mp3

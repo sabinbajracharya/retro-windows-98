@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:retrowindows98/components/internet-explorer.dart';
+import 'package:retrowindows98/components/browser/internet-explorer.dart';
 import 'package:retrowindows98/components/start-bar.dart';
 
 final bgColor = const Color.fromRGBO(70, 155, 154, 1);
