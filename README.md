@@ -40,7 +40,7 @@ samples, guidance on mobile development, and a full API reference.
 * Blue Screen of Death (BSOD).
 * Login And BSOD sound effect.
 * Desktop (with Clock, Start menu press effect and Internet Explorer).
-* Wokring Internet Explorer (Address Bar, Bookmarks, Home Button).
+* Working Internet Explorer (Address Bar, Bookmarks, Home Button).
 
 ## Screenshots
 <p float="left">
