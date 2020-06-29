@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:retrowindows98/components/start-button.dart';
+import 'package:retrowindows98/components/start-bar.dart';
 
 final bgColor = const Color.fromRGBO(70, 155, 154, 1);
 
@@ -76,32 +76,6 @@ class DesktopIcon extends StatelessWidget {
           ],
         ),
       ),
-    );
-  }
-}
-
-class StartBar extends StatelessWidget {
-  const StartBar({Key key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    var screenSize = MediaQuery.of(context).size;
-    return Container(
-      width: screenSize.width,
-      height: 36.0,
-      decoration: BoxDecoration(
-        border: Border(
-            top: BorderSide(
-              width: 1.0,
-              color: Color.fromRGBO(244, 244, 244, 1),
-            ),
-            bottom: BorderSide(
-              width: 1.0,
-              color: Color.fromRGBO(78, 78, 78, 1),
-            )),
-        color: Color.fromRGBO(179, 179, 179, 1),
-      ),
-      child: StartButton()
     );
   }
 }

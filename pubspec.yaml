@@ -24,6 +24,7 @@ dependencies:
   flutter:
     sdk: flutter
   flame: ^0.22.1
+  intl: ^0.16.1
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -53,7 +54,6 @@ flutter:
     - assets/images/ic-internet-explorer.png
     - assets/images/ic-recycle-bin-full.png
     - assets/images/start-button.png
-    - assets/images/sup.jpg
     - assets/audio/windows-98-startup-sound.wav
     - assets/audio/typing.mp3
     - assets/audio/BSOD.mp3
