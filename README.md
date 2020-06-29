@@ -8,7 +8,7 @@
   <br>
   <br>
   <a href="https://gallant-tereshkova-eb2d27.netlify.app/" target="_blank">Run Demo</a>
-  <b>
+  <br>
 </h1>
 
 ## Getting Started
