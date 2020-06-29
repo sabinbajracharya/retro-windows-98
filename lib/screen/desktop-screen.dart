@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:retrowindows98/components/internet-explorer.dart';
 import 'package:retrowindows98/components/start-bar.dart';
 
 final bgColor = const Color.fromRGBO(70, 155, 154, 1);
@@ -12,6 +13,9 @@ class DesktopScreen extends StatefulWidget {
 }
 
 class _DesktopScreenState extends State<DesktopScreen> {
+
+  var openIE = false;
+
   @override
   Widget build(BuildContext context) {
     return Material(
@@ -28,9 +32,16 @@ class _DesktopScreenState extends State<DesktopScreen> {
               path: "assets/images/ic-documents.png",
               title: "My Documents",
             ),
-            DesktopIcon(
-              path: "assets/images/ic-internet-explorer.png",
-              title: "Internet Explorer",
+            InkWell(
+              onDoubleTap: () {
+                setState(() {
+                  openIE = true;
+                });
+              },
+              child: DesktopIcon(
+                path: "assets/images/ic-internet-explorer.png",
+                title: "Internet Explorer",
+              ),
             ),
             DesktopIcon(
               path: "assets/images/ic-recycle-bin-full.png",
@@ -38,6 +49,11 @@ class _DesktopScreenState extends State<DesktopScreen> {
             ),
           ],
         ),
+        if (openIE) InternetExplorer(close: () => {
+          setState(() {
+            openIE = false;
+          })
+        },),
         Positioned(
           bottom: 0,
           child: StartBar(),
