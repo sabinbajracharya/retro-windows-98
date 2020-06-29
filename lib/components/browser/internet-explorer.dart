@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:retrowindows98/components/browser/bookmark-bar.dart';
 import 'package:retrowindows98/components/browser/browser.dart';
 import 'package:retrowindows98/components/browser/ie-address-bar.dart';
+import 'package:retrowindows98/components/browser/ie-navigation-bar.dart';
 import 'package:retrowindows98/components/browser/ie-title-bar.dart';
 import 'package:retrowindows98/components/browser/ie-toolbar.dart';
 
@@ -42,6 +43,12 @@ class _InternetExplorerState extends State<InternetExplorer> {
         //   height: 100.0,
         // ),
         IEToolbar(),
+        Container(height: 4.0,),
+        IENavigationBar(tapHome: () {
+          setState(() {
+            this.newUrl = "https://wikipedia.com";
+          });
+        },),
         Container(height: 4.0,),
         IEAddressBar(
             faviconPath: "assets/images/ic-ie-favicon.png",

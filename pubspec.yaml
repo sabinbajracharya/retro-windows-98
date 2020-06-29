@@ -58,6 +58,8 @@ flutter:
     - assets/images/ic-ember.png
     - assets/images/ic-dart.png
     - assets/images/photo.jpg
+    - assets/images/ic-ie-home.png
+    - assets/images/ic-tree.png
     - assets/audio/windows-98-startup-sound.wav
     - assets/audio/typing.mp3
     - assets/audio/BSOD.mp3
